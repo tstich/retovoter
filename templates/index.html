@@ -48,7 +48,9 @@
       <div class="jumbotron">
         <h1>Moderate Retrospective</h1>
         <p class="lead">Click to start a new Retrospective</p>
-        <p><a class="btn btn-lg btn-success" href="{{ url_for('vote')}}" role="button">Voting Season!</a></p>
+        <form method="post" action="{{ url_for('home') }}">
+        <p><button class="btn btn-lg btn-success" type="submit">Voting Season!</button></p>
+        </form>
       </div>
 
 <!--       <div class="row marketing">
