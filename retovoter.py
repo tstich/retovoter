@@ -20,7 +20,7 @@ def home():
             }
 
         session['role'] = 'moderator'
-        return url_for('vote')+'?season='+season_uuid
+        return url_for('vote', _external=True)+'?season='+season_uuid
 
     return render_template('index.html')
 
