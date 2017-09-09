@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, request, redirect
+from flask import Flask, flash, render_template, url_for, request, redirect
 
 retovoter = Flask(__name__)
 
@@ -9,6 +9,9 @@ def home():
 @retovoter.route('/vote', methods=['GET','POST'])
 def vote():
     if request.method == 'POST':
+        value = request.form['vote']
+        print('Value: ' + value)
+
         return redirect(url_for('home'))
 
     return render_template('vote.html')

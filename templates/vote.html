@@ -56,6 +56,7 @@
 
       <div class="row marketing">
         <form class="form-vote" method="post" action="{{ url_for('vote') }}">
+        <input id="vote" name="vote" type="hidden" value="50"/>
         <p class="lead">Adjust the Smiley with the Slider</p>
         <div id="slider"></div>
         <div id="face">

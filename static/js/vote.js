@@ -3,7 +3,8 @@ var newWidth,
 
 $( "#slider" ).slider({
    slide: function(event, ui) {
-     
+     $("#vote").val( ui.value )
+
      if (ui.value > 51 ) {
        
        mouth.css({ bottom: 0, top: "auto" });
