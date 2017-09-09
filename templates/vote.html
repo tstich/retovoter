@@ -55,6 +55,7 @@
       </div>
 
       <div class="row marketing">
+        <form class="form-vote" method="post" action="{{ url_for('vote') }}">
         <p class="lead">Adjust the Smiley with the Slider</p>
         <div id="slider"></div>
         <div id="face">
@@ -63,7 +64,8 @@
           </div>
         </div>
         <p/>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Vote!</a></p>
+        <p><button class="btn btn-lg btn-success" type="submit" role="button">Vote!</button></p>
+      </form>
       </div>
       <footer class="footer">
         <p>&copy; 2017 Timo Stich</p>
